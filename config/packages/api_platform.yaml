@@ -3,5 +3,10 @@ api_platform:
     version: 1.0.0
     defaults:
         stateless: true
+        path: /api
         cache_headers:
             vary: ['Content-Type', 'Authorization', 'Origin']
+    enable_docs: true
+    swagger:
+        versions: [3]
+   # prefix: /api commenter pour corriger l'erreur de cache
